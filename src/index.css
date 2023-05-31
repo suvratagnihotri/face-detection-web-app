@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.app {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.camera-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video,
+.canvas {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.capture-button,
+.detect-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.capture-button:hover,
+.detect-button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .video,
+  .canvas {
+    width: 100%;
+    height: auto;
+  }
+}
