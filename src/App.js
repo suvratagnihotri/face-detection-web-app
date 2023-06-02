@@ -24,7 +24,6 @@ const App = () => {
     canvasElement.width = videoElement.videoWidth;
     canvasElement.height = videoElement.videoHeight;
 
-    // Draw the current video frame onto the canvas
     context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
 
     setIsCameraOn(false);
